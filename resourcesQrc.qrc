@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="iconos">
+    <file>ayuda.ico</file>
+    <file>home.ico</file>
+    <file>logo.PNG</file>
+    <file>iconoNewest.ico</file>
+    <file>iconoAniadir.ico</file>
+    <file>iconoEliminar.ico</file>
+    <file>iconoFavoritos.ico</file>
+    <file>iconoLibro.ico</file>
+    <file>iconoPeliculaSerie.ico</file>
+    <file>iconoVideojuego.ico</file>
+  </qresource>
+</RCC>

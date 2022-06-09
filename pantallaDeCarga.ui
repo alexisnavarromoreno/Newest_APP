@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VentanaDeCarga</class>
+ <widget class="QMainWindow" name="VentanaDeCarga">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>680</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Newest</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>iconoNewest.ico</normaloff>iconoNewest.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="contenedor">
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="labelTituloApp">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>40</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>NE&lt;strong&gt;W&lt;/strong&gt;EST</string>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <property name="indent">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelDescripcion">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:rgb(191, 191, 191)</string>
+         </property>
+         <property name="text">
+          <string>TU &lt;strong&gt;APP &lt;/strong&gt;DE NOVEDADES</string>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <property name="indent">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QProgressBar" name="progressBar">
+         <property name="styleSheet">
+          <string notr="true">QProgressBar{
+	
+	background-color: rgb(255, 238, 102);
+	color: rgb(75, 75, 75);
+	border-style: none;
+	border-radius: 10px;
+}
+QProgressBar::chunk{
+border-radius:10px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.426, x2:1, y2:0.443182, stop:0 rgba(255, 238, 102, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+         </property>
+         <property name="value">
+          <number>20</number>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelCargando">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:rgb(191, 191, 191)</string>
+         </property>
+         <property name="text">
+          <string>cargando...</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

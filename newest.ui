@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>831</width>
+    <height>789</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Newest</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resourcesQrc.qrc">
+    <normaloff>:/iconos/iconoNewest.ico</normaloff>:/iconos/iconoNewest.ico</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_10">
+    <item>
+     <widget class="QTabWidget" name="pestanias">
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="statusTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget::pane {
+  border: 1px solid lightgray;
+  top:-1px; 
+  background: rgb(245, 245, 245);; 
+} 
+
+QTabBar::tab {
+  background: rgb(230, 230, 230); 
+  border: 1px solid lightgray; 
+  padding: 15px;
+} 
+
+QTabBar::tab:selected { 
+  background: rgb(245, 245, 245); 
+  margin-bottom: -1px; 
+}</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="pestaniaInicio">
+       <attribute name="icon">
+        <iconset resource="resourcesQrc.qrc">
+         <normaloff>:/iconos/home.ico</normaloff>:/iconos/home.ico</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Inicio</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>Inicio</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_5">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_6">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>783</width>
+             <height>625</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_12">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap resource="resourcesQrc.qrc">:/iconos/logo.PNG</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>false</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+              <property name="margin">
+               <number>5</number>
+              </property>
+              <property name="indent">
+               <number>1</number>
+              </property>
+              <property name="textInteractionFlags">
+               <set>Qt::NoTextInteraction</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>¡Bienvenido a Newest, tu APP para consultar novedades! Navega por las distintas pestañas y descubre lo que te ofrece, añade a Mi Biblioteca los títulos en los que estés interesado y eliminalos cuando quieras.</string>
+              </property>
+              <property name="textFormat">
+               <enum>Qt::AutoText</enum>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+              <property name="margin">
+               <number>4</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pestaniaPeliculas">
+       <attribute name="icon">
+        <iconset resource="resourcesQrc.qrc">
+         <normaloff>:/iconos/iconoPeliculaSerie.ico</normaloff>:/iconos/iconoPeliculaSerie.ico</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Peliculas</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>783</width>
+             <height>625</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="1" column="0">
+             <widget class="QPushButton" name="botonAniadirPelicula">
+              <property name="toolTip">
+               <string>Añadir pelicula</string>
+              </property>
+              <property name="statusTip">
+               <string>Añadir película a mi biblioteca</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color:#77d42a;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	cursor:pointer;
+	color:#306108;
+	font-family:Segoe UI Variable;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #aade7c;</string>
+              </property>
+              <property name="text">
+               <string>Añadir</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <layout class="QVBoxLayout" name="verticalLayout_9"/>
+            </item>
+            <item row="0" column="0">
+             <widget class="QListView" name="listView">
+              <property name="font">
+               <font>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pestaniaSeries">
+       <attribute name="icon">
+        <iconset resource="resourcesQrc.qrc">
+         <normaloff>:/iconos/iconoPeliculaSerie.ico</normaloff>:/iconos/iconoPeliculaSerie.ico</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Series</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_2">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>783</width>
+             <height>625</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="0" column="0">
+             <widget class="QListView" name="listView_2"/>
+            </item>
+            <item row="1" column="0">
+             <layout class="QVBoxLayout" name="verticalLayout_8"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="botonAniadirSerie">
+              <property name="toolTip">
+               <string>Añadir serie</string>
+              </property>
+              <property name="statusTip">
+               <string>Añadir serie a mi biblioteca</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color:#77d42a;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	cursor:pointer;
+	color:#306108;
+	font-family:Segoe;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #aade7c;</string>
+              </property>
+              <property name="text">
+               <string>Añadir</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pestaniaLibros">
+       <attribute name="icon">
+        <iconset resource="resourcesQrc.qrc">
+         <normaloff>:/iconos/iconoLibro.ico</normaloff>:/iconos/iconoLibro.ico</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Libros</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_3">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>783</width>
+             <height>625</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="0" column="0">
+             <widget class="QListView" name="listView_3"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="botonAniadirLibro">
+              <property name="toolTip">
+               <string>Añadir libro</string>
+              </property>
+              <property name="statusTip">
+               <string>Añadir libro a mi biblioteca</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color:#77d42a;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	cursor:pointer;
+	color:#306108;
+	font-family:Segoe;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #aade7c;
+	text-shadow:0px 1px 0px #ffee66;</string>
+              </property>
+              <property name="text">
+               <string>Añadir</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <layout class="QVBoxLayout" name="verticalLayout_7"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pestaniaVideojuegos">
+       <attribute name="icon">
+        <iconset resource="resourcesQrc.qrc">
+         <normaloff>:/iconos/iconoVideojuego.ico</normaloff>:/iconos/iconoVideojuego.ico</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Videojuegos</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QScrollArea" name="scrollArea_4">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>783</width>
+             <height>625</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="2" column="0">
+             <widget class="QPushButton" name="botonAniadirVideojuego">
+              <property name="toolTip">
+               <string>Añadir videojuego</string>
+              </property>
+              <property name="statusTip">
+               <string>Añadir videojuego a mi biblioteca</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color:#77d42a;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	cursor:pointer;
+	color:#306108;
+	font-family:Segoe;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #aade7c;</string>
+              </property>
+              <property name="text">
+               <string>Añadir</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QListView" name="listView_4"/>
+            </item>
+            <item row="1" column="0">
+             <layout class="QVBoxLayout" name="verticalLayout_2"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pestaniaBiblioteca">
+       <attribute name="icon">
+        <iconset resource="resourcesQrc.qrc">
+         <normaloff>:/iconos/iconoFavoritos.ico</normaloff>:/iconos/iconoFavoritos.ico</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Mi biblioteca</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QScrollArea" name="scrollBiblioteca">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>762</width>
+             <height>974</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QLabel" name="txtPeliculas">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Películas</string>
+                </property>
+                <property name="scaledContents">
+                 <bool>false</bool>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+                <property name="textInteractionFlags">
+                 <set>Qt::NoTextInteraction</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableView" name="tablePeliculas"/>
+              </item>
+              <item>
+               <widget class="QLabel" name="txtSeries">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Series</string>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+                <property name="textInteractionFlags">
+                 <set>Qt::NoTextInteraction</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableView" name="tableSeries"/>
+              </item>
+              <item>
+               <widget class="QLabel" name="txtLibros">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Libros</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableView" name="tableLibros"/>
+              </item>
+              <item>
+               <widget class="QLabel" name="txtVideojuegos">
+                <property name="font">
+                 <font>
+                  <family>Segoe UI</family>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Videojuegos</string>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableView" name="tableVideojuegos"/>
+              </item>
+              <item>
+               <widget class="QPushButton" name="botonEliminarBiblioteca">
+                <property name="toolTip">
+                 <string>Eliminar</string>
+                </property>
+                <property name="statusTip">
+                 <string>Eliminar de mi biblioteca</string>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color:#fe1a00;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Segoe;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;</string>
+                </property>
+                <property name="text">
+                 <string>Eliminar</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>:/iconosApp/resourcesApp/iconoEliminar.ico</normaloff>:/iconosApp/resourcesApp/iconoEliminar.ico</iconset>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pestaniaAyuda">
+       <attribute name="icon">
+        <iconset resource="resourcesQrc.qrc">
+         <normaloff>:/iconos/ayuda.ico</normaloff>:/iconos/ayuda.ico</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Ayuda</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>831</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QMenu" name="menuSeleccionar">
+    <property name="title">
+     <string>Seleccionar</string>
+    </property>
+    <addaction name="actionHome"/>
+    <addaction name="actionAyuda"/>
+    <addaction name="actionPeliculas"/>
+    <addaction name="actionSeries"/>
+    <addaction name="actionLibros"/>
+    <addaction name="actionVideojuegos"/>
+    <addaction name="actionMi_biblioteca"/>
+   </widget>
+   <addaction name="menuSeleccionar"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionPeliculas">
+   <property name="icon">
+    <iconset resource="resourcesQrc.qrc">
+     <normaloff>:/iconos/iconoPeliculaSerie.ico</normaloff>:/iconos/iconoPeliculaSerie.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Peliculas</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionLibros">
+   <property name="icon">
+    <iconset resource="resourcesQrc.qrc">
+     <normaloff>:/iconos/iconoLibro.ico</normaloff>:/iconos/iconoLibro.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Libros</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionSeries">
+   <property name="icon">
+    <iconset resource="resourcesQrc.qrc">
+     <normaloff>:/iconos/iconoPeliculaSerie.ico</normaloff>:/iconos/iconoPeliculaSerie.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Series</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionVideojuegos">
+   <property name="icon">
+    <iconset resource="resourcesQrc.qrc">
+     <normaloff>:/iconos/iconoVideojuego.ico</normaloff>:/iconos/iconoVideojuego.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Videojuegos</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionMi_biblioteca">
+   <property name="icon">
+    <iconset resource="resourcesQrc.qrc">
+     <normaloff>:/iconos/iconoFavoritos.ico</normaloff>:/iconos/iconoFavoritos.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Mi biblioteca</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionHome">
+   <property name="icon">
+    <iconset resource="resourcesQrc.qrc">
+     <normaloff>:/iconos/home.ico</normaloff>:/iconos/home.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Inicio</string>
+   </property>
+   <property name="toolTip">
+    <string>Inicio</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionAyuda">
+   <property name="icon">
+    <iconset resource="resourcesQrc.qrc">
+     <normaloff>:/iconos/ayuda.ico</normaloff>:/iconos/ayuda.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Ayuda</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resourcesQrc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
