@@ -31,17 +31,15 @@ _Para la construcción del proyecto se han usado las siguientes herramientas: _
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Alexis Navarro Moreno** - *Trabajo Inicial* - [alexisnavarromoreno]([https://github.com/villanuevand](https://github.com/alexisnavarromoreno))
+* **Alexis Navarro Moreno**  - [alexisnavarromoreno]((https://github.com/alexisnavarromoreno))
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia (GPL-3.0 license) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
 ## Expresiones de Gratitud 🎁
 
 * Comenta a otros sobre este proyecto 📢
 
 ---
-⌨️ con ❤️ por [alexisnavarromoreno]([https://github.com/Villanuevand](https://github.com/villanuevand](https://github.com/alexisnavarromoreno)) 😊
+⌨️ con ❤️ por [alexisnavarromoreno]((https://github.com/alexisnavarromoreno)) 😊
